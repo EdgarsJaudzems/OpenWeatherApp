@@ -18,6 +18,7 @@ class ChangeCityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cityTextField.textColor = .white
 
         // Do any additional setup after loading the view.
     }
