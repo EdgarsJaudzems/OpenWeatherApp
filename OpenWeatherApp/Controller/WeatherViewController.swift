@@ -70,7 +70,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     func updateWeatherData(json: JSON) {
         
         if let tempResult = json["main"]["temp"].double {
-            weatherDataModel.temp = Int(tempResult)
+            weatherDataModel.temp = Int(tempResult - 273.15)
             
             weatherDataModel.city = json["name"].stringValue
             weatherDataModel.condition = json["weather"][0]["id"].intValue
@@ -102,7 +102,9 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     
     func userEnterCityName(city: String) {
         print(city)
-       // let params: [String: String] = [q: city]
+        let params: [String:String] = ["q": city , "appid": weatherDataModel.apiId]
+                
+        getWeatherData(url: weatherDataModel.apiUrl, params: params)
     }
 }
 
