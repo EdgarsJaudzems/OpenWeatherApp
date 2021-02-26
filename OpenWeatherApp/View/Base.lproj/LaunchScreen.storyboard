@@ -23,33 +23,38 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="0.013228809459999999" green="0.21405598519999999" blue="0.31374058129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjY-dC-Faz">
-                                <rect key="frame" x="130.5" y="296" width="153" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="6Qr-Ab-aUV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H3-ns-7Fb">
-                                <rect key="frame" x="224.5" y="340" width="59" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="dwp-DH-qem"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="don't freeze again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-lQ-04p">
-                                <rect key="frame" x="138.5" y="372" width="145" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="CUu-QD-AWh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Z6M-fy-IUg">
+                                <rect key="frame" x="130.5" y="395" width="153" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjY-dC-Faz">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="6Qr-Ab-aUV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H3-ns-7Fb">
+                                        <rect key="frame" x="94" y="48" width="59" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="dwp-DH-qem"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="don't freeze again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-lQ-04p">
+                                        <rect key="frame" x="8" y="84" width="145" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="CUu-QD-AWh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,11 +62,12 @@
                             <constraint firstItem="W8G-FX-rdI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1ZX-HY-sVk"/>
                             <constraint firstItem="3Bx-pk-nFp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B1k-Ff-bHt"/>
                             <constraint firstAttribute="bottom" secondItem="3Bx-pk-nFp" secondAttribute="bottom" id="JMD-RX-iqJ"/>
+                            <constraint firstItem="Z6M-fy-IUg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Q8V-sW-gqc"/>
                             <constraint firstItem="3Bx-pk-nFp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YjJ-IR-aQL"/>
-                            <constraint firstItem="2H3-ns-7Fb" firstAttribute="top" secondItem="DjY-dC-Faz" secondAttribute="bottom" constant="-4" id="bO9-t2-usS"/>
                             <constraint firstItem="W8G-FX-rdI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cpY-FS-ivC"/>
                             <constraint firstItem="W8G-FX-rdI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mlb-yi-8gJ"/>
                             <constraint firstAttribute="bottom" secondItem="W8G-FX-rdI" secondAttribute="bottom" id="pm0-dW-v7Q"/>
+                            <constraint firstItem="Z6M-fy-IUg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rFG-We-0Q6"/>
                             <constraint firstItem="3Bx-pk-nFp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="we9-Ow-dgP"/>
                         </constraints>
                     </view>
